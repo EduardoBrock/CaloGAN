@@ -130,7 +130,7 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   G4double absoThickness = 2.*mm;
   G4double gapThickness =  3.*mm;
   G4double calorSizeXY  = 200.*cm;
-  G4double preshowerThickness = 2.67.*cm;
+  G4double preshowerThickness = 5.*cm;
 
   G4double layerThickness = absoThickness + gapThickness;
   G4double calorThickness = nofLayers * layerThickness;
