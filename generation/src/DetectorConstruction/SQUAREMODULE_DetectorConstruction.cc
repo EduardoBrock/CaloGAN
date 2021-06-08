@@ -130,12 +130,12 @@ G4VPhysicalVolume* DetectorConstruction::DefineVolumes()
   G4double absoThickness = 2.*mm;
   G4double gapThickness =  3.*mm;
   G4double calorSizeXY  = 200.*cm;
-  G4double preshowerThickness = 2.67*cm;
+  G4double preshowerThickness = 1.684*cm; //two lead radiators 2+1 radiation lengths thick
 
   G4double layerThickness = absoThickness + gapThickness;
   G4double calorThickness = nofLayers * layerThickness;
   G4double worldSizeXY = 1.4 * calorSizeXY;
-  G4double worldSizeZ  = 1.4 * calorThickness; 
+  G4double worldSizeZ  = 1.4 * calorThickness;
   
   // Get materials
   G4Material* defaultMaterial = G4Material::GetMaterial("Galactic");
