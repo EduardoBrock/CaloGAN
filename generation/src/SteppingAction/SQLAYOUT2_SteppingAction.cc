@@ -66,12 +66,12 @@ int SteppingAction::WhichZBin(double zpos){
 int SteppingAction::WhichXYbin(double xpos, double ypos, int zbin){
   int xbin = -1;
   int ybin = -1;
-  int nbins1x = 4;
+  int nbins1x = 5;
   int nbins2x = 20;
-  int nbins3x = 10;
+  int nbins3x = 20;
   int nbins1y = 20;
   int nbins2y = 20;
-  int nbins3y = 4;
+  int nbins3y = 10;
   int nbinsx[]={nbins1x,nbins2x,nbins3x};
   int nbinsy[]={nbins1y,nbins2y,nbins3y};
   for (int i=1; i<=nbinsx[zbin]; i++){

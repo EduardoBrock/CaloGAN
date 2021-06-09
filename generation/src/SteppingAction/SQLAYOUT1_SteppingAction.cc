@@ -66,7 +66,7 @@ int SteppingAction::WhichZBin(double zpos){
 int SteppingAction::WhichXYbin(double xpos, double ypos, int zbin){
   int xbin = -1;
   int ybin = -1;
-  int nbins1x = 4;
+  int nbins1x = 5;
   int nbins2x = 20;
   int nbins3x = 10;
   int nbins1y = 20;
