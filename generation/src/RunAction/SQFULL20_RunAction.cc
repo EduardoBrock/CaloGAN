@@ -76,7 +76,7 @@ RunAction::RunAction()
 
   analysisManager->CreateNtuple(fname.c_str(), "Edep and TrackL");
 
-  int total_bins = 520 + 3;  // 3 overflow bins for the three calo layers
+  int total_bins = 1200 + 3;  // 3 overflow bins for the three calo layers
 
   for (int i = 0; i < total_bins; ++i) {
 
