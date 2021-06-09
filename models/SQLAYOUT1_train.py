@@ -326,7 +326,7 @@ if __name__ == '__main__':
 
     # each of these builds a LAGAN-inspired [arXiv/1701.05927] component with
     # linear last layer
-    img_layer0 = build_generator(h, 4, 20)
+    img_layer0 = build_generator(h, 5, 20)
     img_layer1 = build_generator(h, 20, 20)
     img_layer2 = build_generator(h, 10, 4)
 
@@ -334,9 +334,9 @@ if __name__ == '__main__':
 
         logger.info('using attentional mechanism')
 
-        # resizes from (4, 20) => (20, 20)
+        # resizes from (5, 20) => (20, 20)
         zero2one = AveragePooling2D(pool_size=(1, 1))(
-            UpSampling2D(size=(5, 1))(img_layer0))
+            UpSampling2D(size=(4, 1))(img_layer0))
         img_layer1 = inpainting_attention(img_layer1, zero2one)
 
         # resizes from (20, 20) => (10, 4)
